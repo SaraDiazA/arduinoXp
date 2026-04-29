@@ -150,16 +150,16 @@ ws.onmessage = (event) => {
 
 _Redactar: qué se quiere lograr con la experiencia interactiva — propósito general (educativo, artístico, lúdico, demostrativo), qué debe sentir o aprender el usuario al interactuar con la placa, y cuál es el resultado esperado al final del desarrollo._
 
----se quiere lograr una experiencia agradable visualmente, con un proposito de facilitar procesos creativos y asin mismo la creacion de estas ideas, el usuario debe sentirse comodo pudiendo usar las multiples herramientas logrando llegar a su zona de confort, el resultado al final del desarrollo deberia ser apto para todos, debe ser facil de usar y sencilla para que todos entiendan su funcionamiento.
+---se debe lograr entretenimiento con animaciones fluidas, su proposito es de entretenimiento, el usuario debe divertirse y concentrarse.
 
 ## 3. Público y contexto de uso
 
 _Redactar: quién va a usar la experiencia (edad, perfil, nivel técnico), en qué entorno físico ocurre (instalación, aula, evento, web pública), y si el usuario manipula el Arduino directamente o solo observa los datos._
 
----personas de diferentes edades a partir de los 12 años que quieran explorar y descubrir mas sobre la ilustracion y creacion visual, ocurre en una web publica gratuita garantizando la oportunidad de la mayoria, el usuario puede manipular el Arduino.
+---lo pueden usar personas a partir de los 12 años, web publica, puede interactuar directamente con el programa.
 
 ## 4. Idea creativa
 
 _Redactar: propuesta concreta de experiencia posible organizadas por sensor — por ejemplo, usar el acelerómetro para controlar ... algo, el micrófono para iniciar animaciones, el joystick para mover un personaje. Incluir referencias visuales._
 
----este es comodo y de facil agarre, es ligero y portatil, agradabe sensorialmente y con capacidad de ajustar respuestas a acciones para una experiencia mas personalizada coo agradable para cada persona quie decida darle uso.
+---la propuesta es que se pueda interactuar con el entorno de la pagina, pudiendo moverse y explorar animaciones.

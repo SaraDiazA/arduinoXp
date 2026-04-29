@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arduino Esplora Runner</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="game-panel">
+      <header class="game-header">
+        <div>
+          <h1>Arduino Esplora Runner</h1>
+          <p>Corre con sensores reales: joystick, botones, luz y micrófono.</p>
+        </div>
+        <div class="status-pill" id="connectionStatus">Conectando...</div>
+      </header>
+
+      <div class="game-area" id="gameArea">
+        <div class="track">
+          <div class="lane left"></div>
+          <div class="lane center"></div>
+          <div class="lane right"></div>
+          <div id="runner" class="runner"></div>
+          <div id="obstacles"></div>
+          <div id="effects"></div>
+        </div>
+      </div>
+
+      <section class="controls-panel">
+        <div class="control-card">
+          <h2>Instrucciones</h2>
+          <ul>
+            <li><strong>Joystick:</strong> cambiar de carril</li>
+            <li><strong>Botón 1:</strong> salto</li>
+            <li><strong>Botón 2:</strong> agache</li>
+            <li><strong>Botón 3:</strong> turbo</li>
+            <li><strong>Botón 4:</strong> escudo temporal</li>
+          </ul>
+        </div>
+        <div class="control-card sensor-summary">
+          <h2>Estado en vivo</h2>
+          <div class="sensor-grid">
+            <div><strong>Joystick</strong><span id="jsValue">x: 0, y: 0</span></div>
+            <div><strong>Luz</strong><span id="luzValue">0</span></div>
+            <div><strong>Temperatura</strong><span id="tempValue">0 °C</span></div>
+            <div><strong>Slider</strong><span id="sliderValue">0</span></div>
+            <div><strong>Acelerómetro</strong><span id="accValue">x:0 y:0 z:0</span></div>
+            <div><strong>Micrófono</strong><span id="micValue">0</span></div>
+            <div><strong>Botones</strong><span id="btnValue">0000</span></div>
+            <div><strong>Último frame</strong><span id="timestampValue">—</span></div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <aside class="dashboard-panel">
+      <div class="panel-card">
+        <h2>Puntuación</h2>
+        <div class="score" id="scoreValue">0</div>
+        <div class="score-meta">
+          <div><span>Velocidad</span><span id="speedValue">1.0x</span></div>
+          <div><span>Turbo</span><span id="boostValue">0s</span></div>
+          <div><span>Escudo</span><span id="shieldValue">OFF</span></div>
+        </div>
+      </div>
+
+      <div class="panel-card panel-map">
+        <h2>Track Sensors</h2>
+        <div class="meter"><span class="meter-fill" id="lightMeter"></span></div>
+        <p>Luz ambiente</p>
+        <div class="meter"><span class="meter-fill" id="soundMeter"></span></div>
+        <p>Ruido</p>
+      </div>
+
+      <div class="panel-card panel-notes">
+        <h2>Sobre esta app</h2>
+        <p>Esta experiencia usa datos reales de Arduino Esplora. Si WebSocket cae, se recupera con REST.</p>
+        <p>Abre el juego en un navegador moderno y mira cómo los sensores controlan la carrera.</p>
+      </div>
+    </aside>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
